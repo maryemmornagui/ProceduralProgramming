@@ -1,0 +1,23 @@
+PROCEDURE dot_product(n:integer , VAR v1,v2 :ARRAY_OF INTEGER )
+VAR
+    i,j:INTEGER;
+BEGIN
+PS :=0;
+    FOR i FROM 0 to n-1 DO 
+      FOR j FROM 0 to n-1 DO  
+         PS=PS+v1[i]*v2[j]
+        END_FOR
+    FOR_FOR
+         
+END
+ALGORITHM orthogonal
+VAR
+tab1,tab2=ARRAY_OF INTEGER[n];
+n:INTEGER;
+BEGIN
+IF (dot_product(n,tab1,tab2)==0) THEN
+    Write("les deux vecteurs sont orthogonaux")
+else
+  write("les deux vecteurs ne sont pas orthogonaux")
+END_IF
+END
